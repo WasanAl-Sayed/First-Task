@@ -71,58 +71,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBA-Ig-PV2">
-                                <rect key="frame" x="71.666666666666686" y="140" width="250.00000000000006" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="nDt-0j-oac"/>
-                                    <constraint firstAttribute="height" constant="50" id="yvh-yK-H6e"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" image="iphone" catalog="system" title="iPhone" imagePadding="20"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="DYC-qM-I9w" eventType="touchUpInside" id="g7S-gK-rYC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9Q-8J-v46">
-                                <rect key="frame" x="71.666666666666686" y="209" width="250" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="bRp-qc-wNT"/>
-                                    <constraint firstAttribute="height" constant="50" id="mdA-Yg-Hs1"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" image="ipad" catalog="system" title="iPad" imagePadding="20">
-                                    <color key="baseForegroundColor" systemColor="systemGreenColor"/>
-                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="DYC-qM-I9w" eventType="touchUpInside" id="BUW-IP-uGG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQF-zf-TL1">
-                                <rect key="frame" x="71.666666666666686" y="279" width="250" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="A6q-rM-Sxh"/>
-                                    <constraint firstAttribute="width" constant="250" id="tCn-nu-Ykk"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" image="macbook" catalog="system" title="MacBook Pro" imagePadding="20">
-                                    <color key="baseForegroundColor" systemColor="systemPurpleColor"/>
-                                    <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="DYC-qM-I9w" eventType="touchUpInside" id="Q05-0t-H3r"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xv3-QU-TFh">
+                                <rect key="frame" x="71.666666666666686" y="109" width="250" height="190"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBA-Ig-PV2">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="nDt-0j-oac"/>
+                                            <constraint firstAttribute="height" constant="50" id="yvh-yK-H6e"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" image="iphone" catalog="system" title="iPhone" imagePadding="20"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="DYC-qM-I9w" eventType="touchUpInside" id="g7S-gK-rYC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9Q-8J-v46">
+                                        <rect key="frame" x="0.0" y="70" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="bRp-qc-wNT"/>
+                                            <constraint firstAttribute="height" constant="50" id="mdA-Yg-Hs1"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" image="ipad" catalog="system" title="iPad" imagePadding="20">
+                                            <color key="baseForegroundColor" systemColor="systemGreenColor"/>
+                                            <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="DYC-qM-I9w" eventType="touchUpInside" id="BUW-IP-uGG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQF-zf-TL1">
+                                        <rect key="frame" x="0.0" y="140" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="A6q-rM-Sxh"/>
+                                            <constraint firstAttribute="width" constant="250" id="tCn-nu-Ykk"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" image="macbook" catalog="system" title="MacBook Pro" imagePadding="20">
+                                            <color key="baseForegroundColor" systemColor="systemPurpleColor"/>
+                                            <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="DYC-qM-I9w" eventType="touchUpInside" id="Q05-0t-H3r"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ziR-5c-VHb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zQF-zf-TL1" firstAttribute="top" secondItem="y9Q-8J-v46" secondAttribute="bottom" constant="20" id="1Fn-H2-LSW"/>
-                            <constraint firstItem="MBA-Ig-PV2" firstAttribute="top" secondItem="ziR-5c-VHb" secondAttribute="top" constant="80" id="2K3-XN-pBG"/>
-                            <constraint firstItem="MBA-Ig-PV2" firstAttribute="centerX" secondItem="uw3-bR-3lI" secondAttribute="centerX" id="IUP-Bp-21x"/>
-                            <constraint firstItem="y9Q-8J-v46" firstAttribute="centerX" secondItem="uw3-bR-3lI" secondAttribute="centerX" id="TEP-wr-htq"/>
-                            <constraint firstItem="y9Q-8J-v46" firstAttribute="top" secondItem="MBA-Ig-PV2" secondAttribute="bottom" constant="20" id="UzB-dI-YyX"/>
-                            <constraint firstItem="zQF-zf-TL1" firstAttribute="centerX" secondItem="uw3-bR-3lI" secondAttribute="centerX" id="yzy-uA-Z1I"/>
+                            <constraint firstItem="xv3-QU-TFh" firstAttribute="centerX" secondItem="uw3-bR-3lI" secondAttribute="centerX" id="H4u-R3-YTI"/>
+                            <constraint firstItem="xv3-QU-TFh" firstAttribute="top" secondItem="ziR-5c-VHb" secondAttribute="top" constant="50" id="QCW-f4-1vV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hi7-r1-Ic7"/>
